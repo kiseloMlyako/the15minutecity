@@ -125,7 +125,7 @@ def main():
     geo_j = gpd.GeoSeries(gdf["geometry"]).to_json()
     geo_j = folium.GeoJson(data=geo_j, style_function=lambda x: {"fillColor": "orange"})
     st.session_state['isochrones'] = [geo_j]
-    st.experimental_rerun()
+    st.rerun()
 
 if __name__ == '__main__':
   main()
