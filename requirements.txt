@@ -4,3 +4,4 @@ st-btn-select
 geopandas
 networkx
 osmnx
+scikit-learn
